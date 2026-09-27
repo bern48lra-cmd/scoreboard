@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Scoreboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="scoreboard.html" class="active">Scoreboard</a>
+            <a href="players.html">Players</a>
+            <a href="results.html">Results</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Current Scoreboard</h2>
+            <table>
+                <thead>
+                    <tr><th>Player</th><th>Score</th></tr>
+                </thead>
+                <tbody id="scoreboard">
+                    <tr><td>John</td><td>10</td></tr>
+                    <tr><td>Mary</td><td>8</td></tr>
+                    <tr><td>Peter</td><td>6</td></tr>
+                </tbody>
+            </table>
+            <button onclick="addPoint()">Add point to John</button>
+        </section>
+    </main>
+
+    <footer>My Scoreboard</footer>
+    <script src="js/scoreboard.js"></script>
+</body>
+</html>
